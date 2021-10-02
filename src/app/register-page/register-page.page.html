@@ -1,0 +1,46 @@
+<ion-content>
+  <div class="container">
+    <div id="arrow" (click)="navigateArrow()" >
+      <ion-icon  name="arrow-back-outline"></ion-icon>
+    </div>
+    <h3><b> SIGN UP</b></h3>
+    <div>
+      <button class="btn  facebook-btn">
+        <ion-icon name="logo-facebook"></ion-icon>Facebook
+      </button>
+      &nbsp;
+      <button class="btn  twiter-btn">
+        <ion-icon name="logo-twitter"></ion-icon>&nbsp;Twiter
+      </button>
+    </div>
+    <div>
+      <p id="paragraph">Or Sign up with Ur Email.</p>
+    </div>
+    <div>
+      <div><input [(ngModel)]="emailid" class="signup-inputfield" placeholder="email" type="email"></div>
+      <div><input [(ngModel)]="full_name" class="signup-inputfield" placeholder="fullname" type="text"></div>
+      <div><input [(ngModel)]="username" class="signup-inputfield" placeholder="username" type="text"></div>
+      <div id="search-divition">
+        <input [(ngModel)]="password"  [type]="fieldTextType ? 'text' : 'password'" id="search-inputfield" placeholder="password " >
+        <i id="eye-icon" (click)="passwordToggle()" class="fa" [ngClass]="{
+          'fa-eye-slash': !fieldTextType,
+          'fa-eye': fieldTextType
+        }"></i>
+       </div>
+      
+    </div>
+    <div>
+      <button (click)="signup()" class="btn signup-btn">
+        Sign Up
+      </button>
+      
+    </div>
+    <div style="margin-top: 20px;">
+      <p><span id="terms-condition">By Signing up, you agreed with our Terms</span> <span id="Services"> of Services and policy</span> </p>
+    <div id="login">
+    <p class="que">Already have account? <span (click)="navigateLogin()" style="color:#52d6c2;cursor: pointer;">Login</span></p>
+    </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="container">
+    <div id="arrow" (click)="navigateArrow()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+    <h3><b> LOGIN</b></h3>
+    <div>
+      <button class="btn  facebook-btn">
+        <ion-icon name="logo-facebook"></ion-icon>Facebook
+      </button>
+      &nbsp;
+      <button class="btn  twiter-btn">
+        <ion-icon name="logo-twitter"></ion-icon>&nbsp;Twiter
+      </button>
+    </div>
+    <div>
+      <p id="paragraph">Or Sign up with Ur Email.</p>
+    </div>
+    <div>
+      <div><input [(ngModel)]="signinusername" class="signup-inputfield" placeholder="usrename" type="text"></div>
+      <div id="search-divition">
+        <input [(ngModel)]="signinpassword"  [type]="fieldTextType ? 'text' : 'password'" id="search-inputfield" placeholder="password " >
+        <i id="eye-icon" (click)="passwordToggle()" class="fa" [ngClass]="{
+          'fa-eye-slash': !fieldTextType,
+          'fa-eye': fieldTextType
+        }"></i>
+      </div>
+
+    </div>
+    <div>
+      <button (click)="signin()" class="btn login-btn">
+        Login
+      </button>
+    </div>
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_h7dcmwwl.json" background="transparent"
+      speed="1.5" style="width:100%;margin-left:15px;" loop autoplay></lottie-player>
+    <div style="margin-top: 20px;">
+      <div class="signup">
+        <p class="que">Don't have account? <span style="color:#52d6c2;cursor: pointer;"><b
+              (click)="navigateRegister()">Signup</b></span></p>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,10 @@
+ion-content {
+    background-color:#fff !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }
+  

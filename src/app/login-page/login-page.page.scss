@@ -1,0 +1,15 @@
+.signup{
+    position: absolute;
+    bottom: 20px;
+    color:#545557;
+    margin-left: 12px;
+}
+ion-content {
+    background-color:#fff !important;
+    // --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

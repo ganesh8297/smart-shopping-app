@@ -1,0 +1,305 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+p{ 
+    padding:0 !important;
+}
+#search-item{
+    font-family: 'Volkhov', serif;
+    color:#212020;
+}
+.product-name{
+    font-size: 13px;
+    text-decoration: bold;
+    color:black;
+    // font-size: 12px !important;
+    padding: 0 !important;
+    margin-top: 5px;
+    font-family: 'Noto Serif KR', serif;
+}
+.mycart-product-name{
+    font-size: 13px;
+    text-decoration: bold;
+    color:black;
+    // font-size: 12px !important;
+    padding: 0 !important;
+    margin-top: 5px;
+    font-family: 'Noto Serif KR', serif;
+}
+.categories{
+    font-size: 12px;
+    margin-top: -10px !important;
+    padding: 0 !important;
+    color:gray !important;
+   
+}
+#categories{
+    font-size: 12px;
+    margin-top: -10px !important;
+    padding: 0 !important;
+    color:gray !important;
+   
+}
+#Quantity{
+    font-size: 9px;  
+    margin-top: -10px !important;
+}
+.rs{
+    color:#52d6c2
+}
+#price{
+    font-size:15px;
+    margin-top: -10px !important;
+    padding: 0 !important;
+    color:gray !important; 
+}
+.price{
+    font-size: 17px;
+    margin-top: 50px !important;
+    margin-left: -30px;
+    padding: 0 !important;
+    color:gray !important;  
+}
+#arrow{
+    margin-top:20px;
+    color:#52d6c2;
+}
+.signup-inputfield{
+    margin:4px 0px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    text-align: left;
+    width: 90vw;
+    border:none;
+    outline: none;
+    box-shadow: 4px 7px 8px #cdf;
+
+}
+
+.facebook-btn{
+    border-radius: 18px;
+    background-color: #01225c;
+    color: #fff;
+}
+.facebook-btn:hover{
+    background-color:#0ea8e3 ;
+}
+
+.twiter-btn{
+    border-radius: 18px;
+    width:115px;
+    color: #fff;
+    background-color: #0ea8e3
+    ;
+}
+.que{
+    color:gray;
+}
+#paragraph{
+    text-align: center;
+    color:#545557;
+    font-size:smaller;
+    margin-top: 10px;
+}
+.signup-btn{
+    background-color: #52d6c2;
+    color:#fff;
+    border-radius: 18px;
+    width: 90vw;
+    margin:12px 0;
+}
+.login-btn{
+    background-color: #52d6c2;
+    color:#fff;
+    border-radius: 18px;
+    width: 90vw;
+    margin:15px 0;
+}
+.login-btn:hover{
+    color:#fff;
+    background-color: #05f7e7;
+}
+
+
+.signup-btn:hover{
+    color:#fff;
+    background-color: #05f7e7;
+}
+
+#terms-condition{
+    font-size: smaller;
+    color:#545557;
+    margin-left: -6px;
+}
+#Services{
+    font-size: smaller;
+    color:#545557;
+    margin-left: 50px;
+}
+#login{
+    font-size: smaller;
+    color:#545557;
+    text-align: center;
+    margin-top:45px;
+}
+#mycart-search-divition{
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-align: left;
+    width: 92vw;
+    border:none;
+    outline: none;
+    box-shadow: 4px 7px 8px #ccc;
+    margin:10px;
+    height:40px;
+}
+#search-divition{
+    margin-top: 6px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-align: left;
+    width: 90vw;
+    border:none;
+    outline: none;
+    box-shadow: 4px 7px 8px #ccc;
+    height:40px;
+}
+  #search-inputfield{
+    border:none;
+    outline: none;
+  }
+  
+  #search-icon{
+    margin-left:5px;
+    color:#52d6c2;
+    cursor: pointer;
+  }
+  #eye-icon{
+    margin-left:15px;
+    color:#52d6c2;
+    cursor: pointer;
+  }
+  .card {
+    border-radius: 6px;
+    border:none;
+    outline: none;
+    box-shadow:3px 4px 12px #ccc;
+    height:85px;
+    margin:5px auto;
+    width: 90vw;
+  }
+  .mycart-card {
+    border-radius: 6px;
+    // border: 1px solid black;
+    outline: none;
+    box-shadow:7px 4px 12px #ccc;
+    height:85px;
+    width: 120vw;
+    margin:5px auto;
+  }
+ #search-product{
+    margin: 0px 0px;
+    width: 90px;
+    height: 71px;
+    border-radius: 8px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    
+ }
+ #search-product-home{
+    margin: 0px 0px;
+    width: 90px;
+    height: 84px;
+    border-radius: 6px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+ }
+ h1{
+    color:#52d6c2;
+    text-align: center;
+ }
+
+ p,h4{
+    color:gray;
+ }
+ ion-label{
+    color:gray;
+ }
+ #profile{
+    width: 125px;
+    margin: -10px 80px;
+    border-radius: 50px;
+}
+ion-icon{
+    cursor: pointer;
+    
+}
+.trash-img{
+    height:30px;
+    width: 30px;
+    outline: #fff;
+    border-color: #fff;
+    margin-top: 25px;
+    cursor: pointer;
+     
+}
+
+ion-item-sliding{
+    margin-left:0px !important;
+    margin: -1px !important;
+}
+
+.sliding{
+    margin-left: -10px !important;
+    height:13vh !important;
+    width:100vw !important;
+    // border:1px solid red;
+    margin: 0 !important;
+    padding: 0 !important;
+   
+}
+.trash{
+    background-color: #fff;
+    margin-top: 5px;
+
+}
+.active:focus{
+    outline: #fff;
+    border:1px solid #fff;
+
+  }

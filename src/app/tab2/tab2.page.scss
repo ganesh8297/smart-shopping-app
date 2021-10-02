@@ -1,0 +1,48 @@
+#delete{
+    margin-left: 18px;
+    margin-top: 0px;
+    color:#52d6c2
+}
+#delete:hover{
+    color: red;
+}
+ion-content {
+    background-color:#fff !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }
+
+  #test{
+    margin-top: -45px;
+    margin-left: 70%;
+  }
+#badge{
+margin-top: -5px !important;
+// border-top:1px  solid #bbbfbf;
+// border-bottom:1px  solid #bbbfbf;
+height:40px !important;
+}
+#total{
+  margin-top: -2px;
+  font-family: 'Volkhov', serif;
+  color:#424242;
+  font-size: 20px;
+}
+ion-badge{
+  margin-top: -2px;
+  border-radius: 4px !important;
+  font-size: 15px;
+  padding: 5px !important;
+  background-color: #52d6c2 !important;
+
+}
+.statusClass{
+  --border:1px solid red
+}
+.trash{
+  --focus-color:#fff !important; 
+}

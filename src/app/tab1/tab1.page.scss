@@ -1,0 +1,51 @@
+.take-photo {
+    margin:35px auto;
+    border-radius: 10px;
+    text-align: center;
+    border:none;
+    outline: none;
+    box-shadow:3px 4px 12px #cdf;
+    height:100px;
+  }
+  #touch-fetch{
+    font-family: 'Volkhov', serif;
+    font-size: 15px;
+    color:gray;
+    margin-bottom: 10px;
+  }
+  
+  #cam-icon{
+    cursor: pointer;
+    width: 75px;
+    margin-left: 85px !important;
+  }
+  .cart-icon{
+    color:#52d6c2;
+    margin-top:60px;
+    margin-left: -55px;
+    width: 75px;
+      
+  }
+  #cart-icon:hover{
+    color:blue;
+  }
+  .clear{
+    cursor: pointer;
+    color:#52d6c2;
+    font-size: smaller !important;
+    
+  }
+
+
+  ion-content {
+    background-color:#fff !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }
+  
+
+ 

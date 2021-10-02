@@ -1,0 +1,31 @@
+
+<ion-content [fullscreen]="true">
+ <div class="container">
+   <h1 style="margin-top: 30px;"><b>My Account</b></h1>
+   <div>
+     <!-- <img class="profile" src="assets/avatar.png" alt=""> -->
+     <lottie-player class="profile" src="https://assets6.lottiefiles.com/packages/lf20_dbqrrD.json"   background="transparent"  speed="1"    autoplay></lottie-player>
+   </div>
+   <ion-list>
+    <ion-item class="details">
+      <ion-label>Username: <span class="name">{{userdetails.username}}</span></ion-label>
+    </ion-item>
+    <ion-item class="details">
+      <ion-label>Fullname: <span  class="name"> {{userdetails.fullname}}</span></ion-label>
+    </ion-item>
+    <ion-item class="details">
+      <ion-label>Email: <span class="name">{{userdetails.email}}</span></ion-label>
+    </ion-item>
+    <ion-item class="details">
+      <ion-label>Date of birth: <span class="name">08/02/1997</span></ion-label>
+    </ion-item>
+    <ion-item class="details">
+      <ion-label>City name: <span class="name" style="align-items:last;">Coimbatore</span></ion-label>
+    </ion-item>
+  </ion-list>
+
+  <button (click)="logout()" class="btn logout-btn">
+    Logout
+  </button>
+ </div>
+</ion-content>

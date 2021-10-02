@@ -1,0 +1,53 @@
+
+    
+#heading{
+    color:#52c6c2;
+    margin-top: 40px;
+    
+    }
+#logo{
+    position: absolute;
+    width: 245px;
+    height:45vh;
+    border-radius: 75px;
+    margin:10px 10px;
+    
+}
+#gif-home{
+    width: 95%;
+    margin-left: 22px;
+
+}
+#divition{
+    position: absolute;
+    bottom:90px;
+    width:100vw;
+    text-align: center;
+}
+.get-started-btn{
+    background-color:#52c6c2;
+    border-radius: 40px;
+    color:#fff;
+    height: 35px;
+    width: 80vw;
+    outline: none;
+    margin-left: 10px;
+   
+}
+.get-started-btn:hover{
+    background-color:#05f7e7;
+}
+#home-login{
+    position: absolute;
+    bottom:25px;
+    margin-left: 30px;
+}
+ion-content {
+    background-color:#fff !important;
+    // --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

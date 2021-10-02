@@ -1,0 +1,46 @@
+
+
+<ion-content [fullscreen]="true">
+  
+    <h1 style="margin-top: 30px;"><b>My Cart</b></h1>
+    <div>
+      <!-- <img id="profile" src="assets/cart.png" alt=""> -->
+      <lottie-player id="profile" src="https://assets10.lottiefiles.com/temp/lf20_6wEpxn.json"   background="transparent"  speed="1"    autoplay></lottie-player>
+    </div>
+
+    <div id="mycart-search-divition">
+      <input id="search-inputfield" placeholder="Search " type="text">
+      <span><ion-icon id="search-icon"  name="search-outline"></ion-icon></span>
+     </div>
+     
+
+
+    <ion-item-sliding *ngFor="let product of productDetails" class="sliding" >
+      <ion-item class="item-inner" style="width: 100%;" >
+        <div  class="mycart-card">
+          <div class="row" id="card">
+            <div class="col-5">
+          <img id="search-product" src="assets/{{product.imgurl}}"  alt="">
+            </div>
+            <div class="col-5" >
+             <p class="mycart-product-name"> {{product.productname}}</p>
+             <p id="categories">{{product.category}}</p>
+             <p id="Quantity">Quantity:1</p>
+            </div>
+            <div class="col-2">
+              <p class="price" > <span class="rs">₹</span>{{product.price}}</p>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item-options>
+        <img [id]="product.id" (click)="delete($event)"   class="trash-img" style="margin-left:-3px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1MLl-zipJLKPkBe52hs-p0YxRMR5ukAg1vmFrZDqpSscZrDxp2uAucFaDc1x0g_ErOQ&usqp=CAU" alt="">
+      </ion-item-options>
+    </ion-item-sliding>
+
+   
+</ion-content>
+    <ion-item id="badge">
+      <ion-label id="total">Total</ion-label>
+      <ion-badge color="secondary" slot="end">{{total}}/-</ion-badge>
+    </ion-item>

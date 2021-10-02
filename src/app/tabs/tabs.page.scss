@@ -1,0 +1,30 @@
+// #home{
+//     color:aqua;
+// }
+// .tab-icon{
+//     color:gray;
+// }
+// ion-tab-bar{
+//     width: 100%;
+//     align-self: center;
+//     --background:#fff;
+    
+// }
+// ion-icon:hover{
+//     color:aqua;
+// }
+// ion-tab-button:hover{
+//     color:aqua;
+// }
+// ion-tabs{
+//     background-color: rgb(144, 213, 214);
+// }
+// #home-label{
+//     color:aqua;
+// }
+ion-tab-bar{
+    --color-selected: aqua !important;
+}
+ion-label{
+    --color-selected: aqua !important;
+}

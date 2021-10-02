@@ -1,0 +1,38 @@
+
+.details{
+    padding: 7px 5px;
+}
+.name{
+    margin-left: 20px;
+}
+ion-item{
+    width: 100vw !important;
+    margin-left: -15px;
+
+}
+.logout-btn{
+    
+    border-radius: 18px;
+    background-color: #52d6c2;
+    color: #fff;
+    width:86vw;
+    margin:18px 4px;
+}
+.logout-btn:hover{
+    color:#fff;
+    background-color:#e8384f;
+}
+.profile{
+    width:70px;
+    margin:-2px 85px;
+    border-radius: 50px;
+}
+ion-content {
+    background-color:#fff !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }
